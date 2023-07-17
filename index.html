@@ -17,15 +17,11 @@
 
             body {
                 min-height: 100vh;
-                background-image: url(https://wallpaperaccess.com/full/4167709.gif);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: right;
                 font-family: 'Roboto', sans-serif;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: black;
+                background: #191919;
             }
 
             section.chat__section {
@@ -72,8 +68,8 @@
                 padding: 20px;
                 font-size: 16px;
                 outline: none;
-                background: #191919;
                 border-radius: 30px;
+                background-color: #00000000 ;
                 color: #fff;
             }
 
@@ -108,8 +104,8 @@
 
             .text-outer {
                 display: flex;
-                background: #191919;
                 border-radius: 30px;
+                background: #222327;
             }
 
             .text-outer svg {
@@ -164,6 +160,7 @@
                 position: fixed;
                 bottom: 0;
                 left: 0;
+                margin: 5px;
                 width: 100%;
                 max-width: 800px;
                 z-index: 1;
@@ -186,15 +183,218 @@
                     opacity: 1;
                 }
             }
+    .white {
+      height: 100vh;
+      background: #191919;
+    }
+
+    .squares {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      overflow: hidden;
+    }
+
+    .square {
+      -webkit-animation: squares 9.5s linear infinite;
+      animation: squares 9.5s linear infinite;
+      align-self: flex-end;
+      width: 1em;
+      height: 1em;
+      transform: translateY(100%);
+      background: #3e3e3e;
+    }
+
+    .square:nth-child(2) {
+      height: 1.5em;
+      width: 3em;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      -webkit-animation-duration: 17s;
+      animation-duration: 17s;
+      -webkit-filter: blur(5px);
+    }
+
+    .square:nth-child(3) {
+      height: 2em;
+      width: 1em;
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+      -webkit-animation-duration: 8s;
+      animation-duration: 8s;
+      -webkit-filter: blur();
+    }
+
+    .square:nth-child(4) {
+      height: 1em;
+      width: 1.5em;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-filter: blur(3px);
+      -webkit-animation-duration: 13s;
+      animation-duration: 13s;
+    }
+
+    .square:nth-child(5) {
+      height: 1.25em;
+      width: 2em;
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
+      -webkit-filter: blur(2px);
+      -webkit-animation-duration: 11s;
+      animation-duration: 11s;
+    }
+
+    .square:nth-child(6) {
+      height: 2.5em;
+      width: 2em;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-filter: blur(1px);
+      -webkit-animation-duration: 9s;
+      animation-duration: 9s;
+    }
+
+    .square:nth-child(7) {
+      height: 5em;
+      width: 2em;
+      -webkit-filter: blur(2.5px);
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+    }
+
+    .square:nth-child(8) {
+      height: 1em;
+      width: 3em;
+      -webkit-animation-delay: 5s;
+      animation-delay: 5s;
+      -webkit-filter: blur(6px);
+      -webkit-animation-duration: 18s;
+      animation-duration: 18s;
+    }
+
+    .square:nth-child(9) {
+      height: 1.5em;
+      width: 2em;
+      -webkit-filter: blur(0.5px);
+      -webkit-animation-duration: 9s;
+      animation-duration: 9s;
+    }
+
+    .square:nth-child(9) {
+      height: 3em;
+      width: 2.4em;
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+      -webkit-filter: blur(0.5px);
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+    }
+
+    @-webkit-keyframes squares {
+      from {
+        transform: translateY(100%) rotate(-50deg);
+      }
+
+      to {
+        transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+      }
+    }
+
+    @keyframes squares {
+      from {
+        transform: translateY(100%) rotate(-50deg);
+      }
+
+      to {
+        transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+      }
+    }
         }
     </style>
 </head>
 
 <body>
+    <div class='white'>
+      <div class='squares'>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+        <div class='square'></div>
+      </div>
+    </div>
     <div class="brand">
         <h1>Grey</h1>
         <div class="dropdown">
-            <img height="40" style="border-radius: 50%;" src="/wassup.png" alt="">
+            <svg style="background-color: white; border-radius: 50%; height: 40px; width: 40px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+<path fill="#000000" opacity="1.000000" stroke="none" 
+	d="
+M534.878052,824.667603 
+	C591.844727,820.834839 645.517944,808.527893 690.347900,771.247070 
+	C722.107666,744.835510 741.914551,710.687256 752.690918,671.034790 
+	C759.160278,647.230225 761.464417,622.880615 761.569885,598.378784 
+	C761.865479,529.725403 761.697205,461.069977 761.708496,392.415375 
+	C761.709778,384.638489 761.699646,384.632111 769.682922,384.632538 
+	C777.348328,384.632935 785.030701,384.961884 792.673279,384.548523 
+	C797.883789,384.266754 799.103882,386.209747 799.097290,391.121948 
+	C799.025452,444.945435 799.179260,498.769135 799.223999,552.592834 
+	C799.239807,571.589233 799.526489,590.596985 798.992004,609.579956 
+	C797.560974,660.397888 786.337769,708.576721 758.351440,751.778076 
+	C738.301941,782.727661 711.571960,806.664734 679.288147,824.375000 
+	C649.480713,840.726807 617.522095,850.730896 584.052307,856.191345 
+	C548.359192,862.014648 512.447937,862.892212 476.490295,860.102295 
+	C437.200256,857.053894 399.192017,848.453125 363.335785,831.525696 
+	C329.728088,815.659729 301.386597,793.278625 278.958496,763.559937 
+	C253.561310,729.906982 240.038666,691.494019 233.563950,650.244751 
+	C230.664856,631.775085 229.739944,613.192322 229.760620,594.523315 
+	C229.835495,526.867798 229.837296,459.212250 229.866867,391.556732 
+	C229.869873,384.671570 229.870514,384.657593 236.785110,384.645081 
+	C244.783783,384.630615 252.794739,384.912170 260.776764,384.547974 
+	C265.825836,384.317596 267.306488,385.976959 267.294952,391.055756 
+	C267.161224,450.210663 267.304901,509.366089 267.253265,568.521301 
+	C267.233917,590.680725 266.720795,612.897583 269.443512,634.904663 
+	C277.918060,703.402588 308.476898,758.037048 370.280701,792.467590 
+	C399.794556,808.909607 431.803131,817.400024 465.108643,821.805786 
+	C488.141083,824.852600 511.234558,825.283508 534.878052,824.667603 
+z"/>
+<path fill="#000000" opacity="1.000000" stroke="none" 
+	d="
+M223.542496,352.455750 
+	C238.132675,342.400299 253.450607,341.104034 268.631134,349.000854 
+	C285.983734,358.027618 293.284760,373.424561 291.079407,392.630371 
+	C289.593994,405.566681 282.955963,415.858643 271.597351,422.493378 
+	C269.584351,421.398590 269.878754,419.931793 269.908081,418.669556 
+	C270.147491,408.358856 270.010590,398.045868 270.255157,387.730133 
+	C270.564758,374.673218 261.605072,366.007385 250.129227,365.308136 
+	C237.184280,364.519379 227.734039,373.521912 227.339737,387.015259 
+	C227.057709,396.666626 227.263458,406.331940 227.212784,415.990814 
+	C227.203323,417.795502 227.531296,419.656555 226.316101,422.047821 
+	C215.890442,416.520874 209.873337,407.605072 207.619614,396.644318 
+	C204.017670,379.126740 208.669296,363.995361 223.542496,352.455750 
+z"/>
+<path fill="#000000" opacity="1.000000" stroke="none" 
+	d="
+M755.264404,421.060242 
+	C739.703918,408.322510 734.726074,392.545441 739.980164,373.542084 
+	C744.168030,358.394806 759.300049,346.107300 775.281860,344.598877 
+	C794.848694,342.752106 809.186035,350.672638 818.573242,367.680756 
+	C828.329529,385.357452 821.741089,410.855591 804.777649,421.737183 
+	C804.265930,422.065430 803.558105,422.087952 802.982239,422.242188 
+	C801.053101,420.745758 801.745178,418.768036 801.733154,417.060394 
+	C801.664001,407.232330 801.728394,397.403442 801.693848,387.575012 
+	C801.646606,374.116577 792.112793,364.731476 779.027588,365.206879 
+	C767.165894,365.637848 758.222534,376.334412 758.688293,389.115387 
+	C759.033813,398.598297 759.028503,408.096863 759.001526,417.587952 
+	C758.996094,419.504944 759.925720,423.058685 755.264404,421.060242 
+z"/>
+</svg>
             <ul class="dropdown-content">
                 <h4>Admin login</h4>
                 <input type="text" placeholder="@username">
